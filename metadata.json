@@ -1,0 +1,6 @@
+{
+  "name": "Senior Citizen Assistance Portal",
+  "description": "A comprehensive web portal connecting senior citizens who need daily assistance with registered volunteers and administrators for B.Tech engineering demonstration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

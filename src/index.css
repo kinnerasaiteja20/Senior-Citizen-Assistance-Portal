@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* High Contrast Mode for Elderly Legibility */
+.high-contrast {
+  filter: contrast(115%);
+}
+
+.high-contrast body {
+  background-color: #f8fafc !important;
+  color: #020617 !important;
+}
+
+.high-contrast p,
+.high-contrast span,
+.high-contrast label {
+  font-weight: 500;
+}
+
+.high-contrast button {
+  border-width: 2px !important;
+}
+
+/* Font Size Scales for Seniors */
+html.font-size-large {
+  font-size: 18px;
+}
+
+html.font-size-xlarge {
+  font-size: 20px;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
